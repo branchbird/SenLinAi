@@ -16,7 +16,7 @@ spring:
     timeout: ${redis.timeout}
     password: ${redis.password}
   rabbitmq:
-    host: 159.75.108.145
-    port: 5672
-    username: bird
-    password: bird
+    host: ${rabbitmq.host}
+    username: ${rabbitmq.username}
+    password: ${rabbitmq.password}
+    port: ${rabbitmq.port}
