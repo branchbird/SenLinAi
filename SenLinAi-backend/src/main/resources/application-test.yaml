@@ -1,0 +1,22 @@
+# 测试配置文件
+server:
+  port: 8101
+spring:
+  # 数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/demo
+    username: root
+    password: root
+  # Redis 配置
+  redis:
+    database: ${redis.database}
+    host: ${redis.host}
+    port: ${redis.port}
+    timeout: ${redis.timeout}
+    password: ${redis.password}
+  rabbitmq:
+    host: 159.75.108.145
+    port: 5672
+    username: bird
+    password: bird

@@ -1,0 +1,21 @@
+# 线上配置文件
+server:
+  address: ${myserver.address}
+spring:
+  # 数据库配置
+  datasource:
+    driver-class-name: ${datasource.driver-class-name}
+    url: ${datasource.url}
+    username: ${datasource.username}
+    password: ${datasource.password}
+  # Redis 配置
+  redis:
+    database: ${redis.database}
+    host: ${redis.host}
+    port: ${redis.port}
+    timeout: ${redis.timeout}
+    password: ${redis.password}
+mybatis-plus:
+  configuration:
+    # 生产环境关闭日志
+    log-impl: ''
